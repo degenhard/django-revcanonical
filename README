@@ -4,9 +4,9 @@
  RevCanonical Django application
 =================================
 
-This is implementation of rev=canonical `url shortening`_ in form of Django
-application. Basically rev=canonical is nice idea about that site should give
-you two links to actual page: one is human-readable, and another is short
+This is an implementation of rev=canonical `url shortening`_ in the form of
+Django application. Basically rev=canonical is nice idea about that site should
+give you two links to actual page: one is human-readable, and another is short
 version, intented to use in limited conditions.
 
 This implementation is modelled after Simon Willison's `post`_ and returns 301
