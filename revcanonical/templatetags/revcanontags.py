@@ -16,3 +16,8 @@ def revcanonical(obj):
     if not site:
         site = Site.objects.get_current().domain
     return mark_safe(u'<link rev="canonical" href="http://%s%s">' % (site, url))
+
+
+@register.simple_tag
+def shorturl(obj):
+    return reverse('revcanonical', encode(obj))

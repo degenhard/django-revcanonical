@@ -39,7 +39,13 @@ Usage
 
 Include such code in your template between ``<head>`` and ``</head>`` tags::
 
-    {% load revcanontags %}{% revcanonical object %}
+    {% load revcanontags %}
+    {% revcanonical object %}
 
 Of course, you should replace ``object`` with your own object variable. And,
 naturally, it should have ``get_absolute_url()`` method.
+
+Additionally you can set your `<a href>` links to short urls::
+
+    {% load revcanontags %}
+    <a href="{% shorturl object %}">...</a>
